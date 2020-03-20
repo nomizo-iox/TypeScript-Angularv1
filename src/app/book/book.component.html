@@ -21,7 +21,7 @@
     <tr *ngFor="let book of books">
       <td>{{book.id}}</td>
       <td>{{book.name}}</td>
-      <td>{{book.price}}</td>
+      <td>{{book.price | currency: 'USD'}}</td>
     </tr>
     </tbody>
   </table>
